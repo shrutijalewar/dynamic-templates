@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf8">
+  
+  <title>Sum</title>
+  </head>
+  <body>
+  <h1>Sum of the numbers</h1>
+  <% var sum = x + y +a +b %>
+
+  <%
+  var col;
+  if(sum%2){
+   col = 'red';
+  }else{
+  col = 'blue';
+  }
+  %>
+
+  <h2 style="color:<%=col%>;font-size:<%=fontsize %>;border-color:<%=color%>;border-style:inset;border-width:<%=borderwidth%>px;">
+  <%= x %> + <%= a %>+ <%=b %>+ <%= y %> = <%= sum %><% var col %>
+  </h2>
+    </body>
+</html>
+
+
+
+
+
+
+

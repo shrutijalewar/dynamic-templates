@@ -1,0 +1,13 @@
+table{
+  border: 1px solid grey;
+  border-collapse:collapse;
+}
+table td{
+border:10px solid green;
+padding: 25px;
+font-size: 30px;
+}
+
+table tr:nth-child(even){
+background-color:lightblue;
+}
