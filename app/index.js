@@ -40,6 +40,12 @@ app.get('/sumlist/:a', function(req,res){
   
   res.render('sumlist',{a:a, sum:sum, even:req.query.even, odd:req.query.odd});
   });
+
+app.get('/rolldice/:rolls', function(req, res){
+ req.params.rolls = parseInt(req.params.rolls);
+  res.render('dice.ejs', req.params);
+});
+
 var port = process.env.PORT;
 
 app.listen(port, function(){
