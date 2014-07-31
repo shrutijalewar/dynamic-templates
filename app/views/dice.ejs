@@ -10,8 +10,8 @@
         <% var sum = 0 %>
         <% for( var i = 0; i < rolls; i++) { %> 
         <% var n = (Math.floor(Math.random() * 6) + 1) %>
-        <%= sum += n %>
-        <% var pic = "/images/d" + n + ".png" %>
+        <% sum += n %>
+        <% var pic = "/images/dice" + n + ".png" %>
         <img src="<%= pic %>">
         <% } %>
        <h2>Sum = <%= sum %> </h2>
